@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header-nav{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    height: 70px;
+    align-items: center;
+
+}
+.list-nav{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    justify-content: space-between;
+    /* border: 1px solid; */
+    width: 18%;
+    align-items: center;
+    position: relative;
+}
+.drop-down{
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: -1px 3px 18px -1px rgba(0,0,0,0.75);
+    min-width: 90%;
+    text-align: start;
+}
+.drop-down li{
+    padding: 10px 20px;
+}
+.drop-down li:hover{
+background-color: lightgrey;
+}
+.drop-down a, .list-nav a{
+    text-decoration: none;
+    color: #ababab;
+}
+.item-nav a:hover{
+    color: #00b39b;
+}
+ .item-nav:hover .drop-down{
+    display: block;
+}
+/* Intro Style */
+.div-stnd{
+    width: 1015px;
+    margin-left:167px ;
+    margin-top:33px ;
+     /* border: solid red;  */
+}
+.middle{
+    text-align: center;
+    color:#00b39b ;
+    }
+.middle *{
+    margin: 20px 10px;
+    }
+
+.container-p{
+    text-align: left;
+    display: flex;
+    color:#ababab;
+    font-size: 20px;
+}
+.container-p p{
+    width: 50%;
+}
+
+/* style Services Cards */
+.service{
+    display: flex;
+    justify-content: space-between;
+}
+.service-item{
+    border-radius: 10px;
+    padding: 1.375em 2.5em 0;
+    overflow: hidden;
+    margin: 10px;
+    color: white;
+    height: 392px;
+}
+.patient{
+    background-color: #00ccb1;
+    width: 50%;
+    position: relative;
+
+}
+.patient select{
+    font-weight: 200;
+    margin-top: 15%;
+    padding: 0 0.5em 0 1.5em;
+    height: 40px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.doctor{
+    background-color:  #3d83df;
+    width: 50%;
+    position: relative;
+}
+.img-patient{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    width: 400px;
+    height: 250px;
+    
+}
+.img-doctor{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    width: 400px;
+    height: 250px;
+}
+/* style Section brands */
+.brands-logo{
+    display: flex;
+    list-style: none;
+    line-height: 3;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.brands-logo li{
+    fill:#ababab ;
+}
+.svg-logo:hover{
+fill:#00b39b ;
+}
+.heading-logo{
+    color: #00b39b;
+    float: left;
+    width: 35%;
+    font-size: 1.625em;
+    
+}
+/* Style sectionStats */
+.screen{
+    width: 100vw;
+    background: #e5faf8;
+    background-image: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+    padding: 1.875em 0 .625em;
+    overflow: hidden;
+    margin-top: 3.125rem;
+    height: 560px;
+    position: relative;
+}
+.header-div{
+    color: #00b39b;
+    width: 41%;
+    font-size: 1.8em;
+    margin: .25em 0 .35em;
+    padding-right: 1em;
+    /* border: 1px solid red; */
+}
+.header-div p{
+    color:#ababab ;
+    font-size: 0.6em;
+    margin-top: 2em;
+}
+.container{
+    display: flex;
+}
+.container-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+}
+.container-items div{
+width: 200px;
+height: 220px;
+text-align: center;
+color: #ababab ;
+padding: 20px 10px 10px;
+background-color: white;
+-webkit-box-shadow: -3px -1px 9px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px -1px 9px -2px rgba(0,0,0,0.75);
+box-shadow: -3px -1px 9px -2px rgba(0,0,0,0.75);
+border-radius: 7px 10px 10px 10px;
+}
+.container-items div h3 {
+    color: #00b39b;
+    margin:20px 0px 20px;
+
+}
+#item1{
+    position: relative;
+    bottom: 10px;
+    transition-property:all;
+    transition: 1s;
+
+}
+#item2{
+    position: relative;
+    bottom: 40px;
+    right: 50px;
+    transition:2s;
+}
+#item3{
+    position: relative;
+    top: 10px;
+    transition: 3s;
+}
+#item4{
+    position: relative;
+    bottom: 20px;
+    right: 50px;
+    transition: 4s;
+}
+
+/* Style Section office_inner */
+
+
+.offices-header{
+    display:flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    max-width: 460px;
+    margin-left: 300px;
+}
+.offices-header p {
+color:#ababab  ;
+}
+.caption-img{
+    width: 309px;
+    height: 50px;
+    color:#ababab ;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.slid-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 20px;
+
+}
+.img{
+    border: 1px solid wheat ;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.btn-small{
+    color: #ffff;
+    background-color: #3d83df;
+    font-size: 15px;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 2;
+}
+.img a {
+    text-decoration: none;
+}
+.img:hover{
+    -webkit-box-shadow: -8px 7px 8px -3px rgba(0,0,0,0.51);
+    -moz-box-shadow: -8px 7px 8px -3px rgba(0,0,0,0.51);
+    box-shadow: -8px 7px 8px -3px rgba(0,0,0,0.51);
+}
+.btn-small:hover{
+    background-color:#1662c6;
+}
+
+
+
+/* Style Footer */
+
+footer{
+    margin-top: 70px;
+    border-top:1px solid lightgrey ;
+    color: #ababab;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7;
+}
+ footer a {
+    text-decoration: none;
+    color: #3d83df
+}
+footer a:hover{
+    text-decoration: underline;
+}
